@@ -12,15 +12,14 @@
       "port": 3000
     }
   ],
+  "start": "echo \"Cloud environment ready for UI testing\"",
   "terminals": [
     {
-      "name": "API (json-server)",
-      "description": "Mock REST API for users and payment orders.",
-      "command": "npx json-server --watch db.json --port 3000"
+      "name": "api",
+      "command": "npm run api"
     },
     {
-      "name": "Web (Angular)",
-      "description": "Angular dev server for UI testing and artifacts.",
+      "name": "web",
       "command": "npm run start -- --host 0.0.0.0 --port 4200"
     }
   ]
