@@ -1,0 +1,27 @@
+{
+  "$schema": "https://www.cursor.com/schemas/environment.schema.json",
+  "name": "admin-dashboard-cloud",
+  "install": "npm install",
+  "ports": [
+    {
+      "name": "Angular app",
+      "port": 4200
+    },
+    {
+      "name": "JSON API",
+      "port": 3000
+    }
+  ],
+  "terminals": [
+    {
+      "name": "API (json-server)",
+      "description": "Mock REST API for users and payment orders.",
+      "command": "npx json-server --watch db.json --port 3000"
+    },
+    {
+      "name": "Web (Angular)",
+      "description": "Angular dev server for UI testing and artifacts.",
+      "command": "npm run start -- --host 0.0.0.0 --port 4200"
+    }
+  ]
+}
