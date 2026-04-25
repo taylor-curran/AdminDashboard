@@ -1,0 +1,29 @@
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.unauthorized-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.unauthorized-container i {
+  font-size: 3rem;
+}
+
+.unauthorized-container h1,
+.unauthorized-container p {
+  margin: 0;
+}
+
+.unauthorized-container p {
+  text-align: center;
+}
+
+.unauthorized-container a {
+  text-decoration: none;
+}
