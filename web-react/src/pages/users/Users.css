@@ -1,0 +1,38 @@
+.user-container {
+  padding: 20px;
+  margin: 20px;
+}
+
+.user-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-container form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-container form button {
+  align-self: flex-start;
+  margin-right: 10px;
+}
+
+.user-container label {
+  margin-bottom: 10px;
+}
+
+.user-container small {
+  color: red;
+}
+
+.user-container .two-buttons {
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+}
+
+.user-container .table-container {
+  margin-top: 20px;
+}

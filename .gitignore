@@ -42,3 +42,10 @@ testem.log
 Thumbs.db
 package-lock.json
 db.json
+
+# Playwright e2e
+/.playwright-browsers/
+/e2e/node_modules/
+/e2e/test-results/
+/e2e/playwright-report/
+
