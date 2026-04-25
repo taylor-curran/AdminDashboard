@@ -46,8 +46,7 @@ export function UsersPage() {
     control,
     handleSubmit,
     reset,
-    formState: { errors, touchedFields },
-    trigger,
+    formState: { errors },
   } = useForm<UserFormValues>({
     defaultValues: emptyForm,
     mode: "onTouched",
@@ -173,13 +172,9 @@ export function UsersPage() {
             <label htmlFor="firstName">First Name</label>
             <InputText
               id="firstName"
-              {...register("firstName", {
-                required: true,
-                maxLength: 50,
-              })}
-              onBlur={() => trigger("firstName")}
+              {...register("firstName", { required: true, maxLength: 50 })}
             />
-            {errors.firstName && touchedFields.firstName && (
+            {errors.firstName && (
               <div>
                 {errors.firstName.type === "required" && (
                   <small>First Name is required.</small>
@@ -194,13 +189,9 @@ export function UsersPage() {
             <label htmlFor="lastName">Last Name</label>
             <InputText
               id="lastName"
-              {...register("lastName", {
-                required: true,
-                maxLength: 50,
-              })}
-              onBlur={() => trigger("lastName")}
+              {...register("lastName", { required: true, maxLength: 50 })}
             />
-            {errors.lastName && touchedFields.lastName && (
+            {errors.lastName && (
               <div>
                 {errors.lastName.type === "required" && (
                   <small>Last Name is required.</small>
@@ -221,9 +212,8 @@ export function UsersPage() {
                 maxLength: 50,
                 pattern: EMAIL_RE,
               })}
-              onBlur={() => trigger("email")}
             />
-            {errors.email && touchedFields.email && (
+            {errors.email && (
               <div>
                 {errors.email.type === "required" && (
                   <small>Email is required.</small>
@@ -248,9 +238,8 @@ export function UsersPage() {
                 validate: (v) =>
                   validatePasswordStrength(v) || "passwordStrength",
               })}
-              onBlur={() => trigger("password")}
             />
-            {errors.password && touchedFields.password && (
+            {errors.password && (
               <div>
                 {errors.password.type === "required" && (
                   <small>Password is required.</small>
