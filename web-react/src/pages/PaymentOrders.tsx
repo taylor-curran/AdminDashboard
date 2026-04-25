@@ -78,6 +78,7 @@ export function PaymentOrdersPage() {
           filters={filters}
           onFilter={(e) => setFilters(e.filters)}
           globalFilterFields={[...FILTER_FIELDS]}
+          filterDisplay="row"
           dataKey="id"
           header={
             <div className="table-header">

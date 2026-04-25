@@ -140,7 +140,6 @@ export function Statistics() {
     <div className="statistics-container">
       <Card
         className="transaction-chart"
-        header={<div className="p-card-title-text">Number of successful transactions</div>}
         title="Number of successful transactions"
       >
         <Chart
