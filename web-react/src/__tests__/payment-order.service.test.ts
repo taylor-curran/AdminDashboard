@@ -16,7 +16,7 @@ describe("PaymentOrderService", () => {
     });
 
     const result = await paymentOrderService.getPaymentOrders();
-    expect(fetch).toHaveBeenCalledWith("/paymentOrders");
+    expect(fetch).toHaveBeenCalledWith("/api/paymentOrders");
     expect(result).toEqual(mockOrders);
   });
 
@@ -32,7 +32,7 @@ describe("PaymentOrderService", () => {
     });
 
     const result = await paymentOrderService.getPaymentOrderById("1");
-    expect(fetch).toHaveBeenCalledWith("/paymentOrders/1");
+    expect(fetch).toHaveBeenCalledWith("/api/paymentOrders/1");
     expect(result).toEqual(mockOrder);
   });
 });

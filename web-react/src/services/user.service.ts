@@ -1,6 +1,6 @@
 import { User } from "../types";
 
-const API_URL = "/users";
+const API_URL = "/api/users";
 
 export const userService = {
   async getUsers(): Promise<User[]> {
@@ -25,7 +25,7 @@ export const userService = {
     return res.json();
   },
 
-  async updateUser(id: string, user: Omit<User, "id">): Promise<User> {
+  async updateUser(id: string, user: Partial<Omit<User, "id">>): Promise<User> {
     const res = await fetch(`${API_URL}/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },

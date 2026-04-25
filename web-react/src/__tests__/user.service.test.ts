@@ -16,11 +16,11 @@ describe("UserService", () => {
     });
 
     const result = await userService.getUsers();
-    expect(fetch).toHaveBeenCalledWith("/users");
+    expect(fetch).toHaveBeenCalledWith("/api/users");
     expect(result).toEqual(mockUsers);
   });
 
-  it("createUser sends POST /users", async () => {
+  it("createUser sends POST /api/users", async () => {
     const newUser = {
       firstName: "New",
       lastName: "User",
@@ -35,7 +35,7 @@ describe("UserService", () => {
     });
 
     await userService.createUser(newUser);
-    expect(fetch).toHaveBeenCalledWith("/users", {
+    expect(fetch).toHaveBeenCalledWith("/api/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newUser),
@@ -50,7 +50,7 @@ describe("UserService", () => {
     });
 
     await userService.updateUser("1", updated);
-    expect(fetch).toHaveBeenCalledWith("/users/1", {
+    expect(fetch).toHaveBeenCalledWith("/api/users/1", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updated),
@@ -64,7 +64,7 @@ describe("UserService", () => {
     });
 
     await userService.deleteUser("1");
-    expect(fetch).toHaveBeenCalledWith("/users/1", {
+    expect(fetch).toHaveBeenCalledWith("/api/users/1", {
       method: "DELETE",
     });
   });

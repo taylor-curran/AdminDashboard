@@ -1,6 +1,6 @@
 import { PaymentOrder } from "../types";
 
-const API_URL = "/paymentOrders";
+const API_URL = "/api/paymentOrders";
 
 export const paymentOrderService = {
   async getPaymentOrders(): Promise<PaymentOrder[]> {

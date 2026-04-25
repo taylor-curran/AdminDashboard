@@ -1,6 +1,6 @@
 import { User } from "../types";
 
-const API_URL = "/users";
+const API_URL = "/api/users";
 
 class AuthService {
   private currentUser: User | null;
