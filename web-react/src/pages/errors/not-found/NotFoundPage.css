@@ -1,0 +1,29 @@
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.error-container i {
+  font-size: 3rem;
+}
+
+.error-container h1,
+.error-container p {
+  margin: 0;
+}
+
+.error-container p {
+  text-align: center;
+}
+
+.error-container a {
+  text-decoration: none;
+}

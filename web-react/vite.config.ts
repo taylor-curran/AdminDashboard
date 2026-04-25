@@ -10,4 +10,9 @@ export default defineConfig({
       "/paymentOrders": "http://localhost:3000",
     },
   },
+  test: {
+    environment: "jsdom",
+    setupFiles: "./src/test-setup.ts",
+    globals: true,
+  },
 });
