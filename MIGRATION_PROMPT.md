@@ -23,7 +23,7 @@ Work through every route in `src/app/app.routes.ts`. For each one:
 1. Read the Angular source (`src/app/pages/<feature>/`, its service, its guard).
 2. Open `http://localhost:4200/<route>` and `http://localhost:5173/<route>` side-by-side.
 3. Perform the same action in each. They must look identical and emit the same HTTP requests against `:3000` (watch the `api` terminal log).
-4. Write behavioral tests on **both** sides asserting the same things. If the Angular feature has no tests, add them first to lock in current behavior, then mirror them in React.
+4. Add tests on **both** sides asserting the same things. You decide what kind and how much — unit, integration, e2e, snapshot, whatever fits the feature. If the Angular side has no tests for it, add them first to lock in current behavior, then mirror them in React.
 
 ## Definition of done
 
