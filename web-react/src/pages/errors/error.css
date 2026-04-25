@@ -1,0 +1,29 @@
+.error-page-container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.error-page-container .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.error-page-container .error-container i {
+  font-size: 3rem;
+}
+
+.error-page-container .error-container h1,
+.error-page-container .error-container p {
+  margin: 0;
+}
+
+.error-page-container .error-container p {
+  text-align: center;
+}
+
+.error-page-container .error-container a {
+  text-decoration: none;
+}

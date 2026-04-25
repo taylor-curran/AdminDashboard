@@ -1,0 +1,66 @@
+.sidebar-container {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.sidebar-container .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-container .brand h1 {
+  margin: 0;
+}
+
+.sidebar-container .brand i {
+  font-size: 28px;
+}
+
+.sidebar-container .brand:hover {
+  cursor: pointer;
+}
+
+.sidebar-container .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-container .sidebar .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-container .sidebar .link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.sidebar-container .sidebar .link i {
+  font-size: 18px;
+}
+
+.sidebar-container .sidebar .link:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.sidebar-container .sidebar .link.active {
+  background-color: #ebebeb;
+}
