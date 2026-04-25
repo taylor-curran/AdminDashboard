@@ -30,7 +30,7 @@ Work through every route in `src/app/app.routes.ts`. For each one:
 - Every Angular route has a working React equivalent at the same path.
 - Side-by-side, every page is visually indistinguishable (layout, fields, validation messages, role gating, error states).
 - Same user actions produce the same HTTP method + path + body against `:3000`.
-- Behavioral tests exist on both sides for every feature and assert the same things; both test suites pass.
+- Tests exist on both sides for every feature and assert the same things; both test suites pass. Pick the type and depth you think the feature deserves.
 - `cd web-react && npm run build` succeeds.
 - `npx ng build` still succeeds (you didn't break the reference).
 
