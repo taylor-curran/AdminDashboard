@@ -1,5 +1,26 @@
 {
   "$schema": "https://www.cursor.com/schemas/environment.schema.json",
   "name": "admin-dashboard-cloud",
-  "install": "npm ci --no-audit --no-fund"
+  "install": "npm install",
+  "ports": [
+    {
+      "name": "Angular app",
+      "port": 4200
+    },
+    {
+      "name": "JSON API",
+      "port": 3000
+    }
+  ],
+  "start": "true",
+  "terminals": [
+    {
+      "name": "api",
+      "command": "npm run api"
+    },
+    {
+      "name": "web",
+      "command": "npm run web"
+    }
+  ]
 }
