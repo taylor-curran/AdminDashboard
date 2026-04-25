@@ -6,8 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/users": "http://localhost:3000",
-      "/paymentOrders": "http://localhost:3000",
+      "/api": {
+        target: "http://localhost:3000",
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
     },
   },
 });
