@@ -1,11 +1,15 @@
 {
   "$schema": "https://www.cursor.com/schemas/environment.schema.json",
   "name": "admin-dashboard-cloud",
-  "install": "npm install",
+  "install": "npm install && npm --prefix web-react install",
   "ports": [
     {
       "name": "Angular app",
       "port": 4200
+    },
+    {
+      "name": "React app",
+      "port": 5173
     },
     {
       "name": "JSON API",
@@ -21,6 +25,10 @@
     {
       "name": "web",
       "command": "npm run web"
+    },
+    {
+      "name": "react",
+      "command": "npm run react"
     }
   ]
 }
