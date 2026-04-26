@@ -1,0 +1,99 @@
+.detail-title-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.back-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-detail-container {
+  padding: 20px;
+  margin: 20px;
+}
+
+.order-detail-empty {
+  padding: 20px;
+  margin: 20px;
+}
+
+.detail-card {
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #1a202c;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+}
+
+.detail-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #ebebeb;
+}
+
+.detail-card-title h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.detail-card-title p {
+  font-size: 0.875rem;
+  color: #718096;
+  margin: 0;
+}
+
+.detail-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  background-color: #3182ce;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.detail-card-body {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.detail-card-body .card-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.detail-card-body .card-column-title {
+  margin: 0;
+}
+
+.detail-card-body .card-column {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.detail-card-body .label {
+  color: #718096;
+}
+
+.detail-card-body .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.detail-card-body hr {
+  border: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  width: 100%;
+}

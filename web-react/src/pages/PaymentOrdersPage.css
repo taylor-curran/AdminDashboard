@@ -1,0 +1,25 @@
+.order-container {
+  padding: 20px;
+  margin: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-header .p-input-icon-left {
+  position: relative;
+}
+
+.table-header .p-input-icon-left > i {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.table-header .p-inputtext {
+  padding-left: 2.5rem;
+}

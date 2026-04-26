@@ -3,3 +3,8 @@ dist
 .vite
 coverage
 *.tsbuildinfo
+playwright-report
+test-results
+e2e/recordings
+e2e/screenshots
+e2e/demo-react-flow.webm
