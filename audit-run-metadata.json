@@ -1,0 +1,25 @@
+{
+  "migration_pr_url": "https://github.com/taylor-curran/AdminDashboard/pull/13",
+  "migration_branch": "cursor/angular-react-app-migration-477e",
+  "audit_branch": "cursor/angular-react-migration-audit-880a",
+  "repository": "https://github.com/taylor-curran/AdminDashboard",
+  "angular_commit": "ca30471d42928ecf2a32e551d1f6e59d77e06640",
+  "react_commit": "ca30471d42928ecf2a32e551d1f6e59d77e06640",
+  "angular_url": "http://127.0.0.1:4200",
+  "react_url": "http://127.0.0.1:4173",
+  "api_url": "http://127.0.0.1:3000",
+  "commands_run": [
+    "npm install",
+    "cd e2e-comparison && npm install && npx playwright install chromium",
+    "cd web-react && npm run build",
+    "cd e2e-comparison && npx playwright test",
+    "cd e2e-comparison && npx playwright test --project=screenshot-pairs"
+  ],
+  "started_at": "2026-04-26T22:05:24Z",
+  "completed_at": "2026-04-26T22:06:30Z",
+  "notes": [
+    "Angular and React share the same commit SHA in this workspace snapshot because the migration branch already merged React into the monorepo.",
+    "React preview uses Vite preview on 4173 with proxy to json-server on 3000; Angular uses absolute http://localhost:3000 in services.",
+    "Playwright projects: angular-audit (@angular), react-audit (@reactMismatch), screenshot-pairs (@screenshots)."
+  ]
+}
