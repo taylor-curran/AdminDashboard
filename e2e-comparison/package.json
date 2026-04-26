@@ -1,0 +1,15 @@
+{
+  "name": "admin-dashboard-migration-audit-e2e",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:browsers": "playwright install chromium",
+    "test:angular": "playwright test --project=angular-audit",
+    "test:react": "playwright test --project=react-audit",
+    "test:screenshots": "playwright test --project=screenshot-pairs",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
