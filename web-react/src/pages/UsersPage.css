@@ -1,0 +1,46 @@
+.user-container {
+  padding: 20px;
+  margin: 20px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form label {
+  margin-bottom: 10px;
+}
+
+.user-form small {
+  color: red;
+}
+
+.roles-field {
+  width: 100%;
+}
+
+.roles-multiselect {
+  width: 100%;
+}
+
+.two-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.table-actions {
+  margin: 0;
+}
+
+.table-container {
+  margin-top: 20px;
+}

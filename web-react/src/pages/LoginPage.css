@@ -1,0 +1,41 @@
+.login-main-container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  min-height: 60vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login-field {
+  width: 100%;
+}
+
+.login-field .p-inputtext {
+  width: 100%;
+}
+
+.login-submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.login-error {
+  color: #e53e3e;
+  text-align: center;
+  margin-top: 1rem;
+}
