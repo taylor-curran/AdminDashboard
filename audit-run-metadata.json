@@ -1,0 +1,27 @@
+{
+  "migration_pr_url": "https://github.com/taylor-curran/AdminDashboard/pull/12",
+  "migration_branch": "cursor/angular-react-migration-f924",
+  "audit_branch": "cursor/angular-react-migration-audit-20a2",
+  "repository": "https://github.com/taylor-curran/AdminDashboard",
+  "angular_commit": "a91938589c075ffa38842c5d4b21b95bf09d6103",
+  "react_commit": "a91938589c075ffa38842c5d4b21b95bf09d6103",
+  "angular_url": "http://127.0.0.1:4200",
+  "react_url": "http://127.0.0.1:5173",
+  "api_url": "http://127.0.0.1:3000",
+  "commands_run": [
+    "npm install (repository root)",
+    "npm install (web-react/)",
+    "npm install (e2e-comparison/)",
+    "npx playwright install chromium (web-react or e2e-comparison)",
+    "cd e2e-comparison && CI=1 npx playwright test"
+  ],
+  "started_at": "2026-04-26T21:45:00Z",
+  "completed_at": "2026-04-26T22:01:33Z",
+  "notes": [
+    "PR #12 base branch per gh: main; head: cursor/angular-react-migration-f924.",
+    "Angular and React share the same git commit in this workspace; both apps were exercised from that tree.",
+    "json-server serves db.json; credentials used in tests: admin@mail.com / admin; customer john.doe@example.com / Password123!.",
+    "Playwright webServer in e2e-comparison/playwright.config.ts starts json-server (3000), ng serve (4200), and Vite (5173) when CI=1.",
+    "Ports 4200/5173/3000 were confirmed free before CI runs (pre-existing listeners would make webServer fail)."
+  ]
+}
