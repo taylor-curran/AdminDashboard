@@ -41,4 +41,9 @@ testem.log
 .DS_Store
 Thumbs.db
 package-lock.json
+!web-react/package-lock.json
 db.json
+
+# Playwright / local artifacts
+web-react/test-results/
+/artifacts/
