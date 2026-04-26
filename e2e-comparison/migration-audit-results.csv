@@ -1,0 +1,5 @@
+area,test_name,category,angular_behavior,react_behavior,priority
+Authentication,login screen includes credential form controls,missing functionality,"Login page shows heading, email input, password input, and Login submit button.","React app does not render a login screen or credential form controls.",high
+Authentication,admin can sign in and reach the authenticated home dashboard,missing functionality,"Admin credentials can be submitted and route changes to /home with dashboard content.","No login fields are available, so sign-in flow cannot be executed and /home dashboard is unreachable through auth flow.",high
+Payment Orders,payment orders page exposes tabular data view,missing functionality,"After login, /payment-orders shows payment orders heading, data table columns, and order rows from API.","Payment Orders route/page is absent in the rendered React UI.",high
+Users,users page contains user management form and table,missing functionality,"After login, /users shows User Management heading, user form controls, roles selector, and users table.","Users management route/page and controls are absent in the rendered React UI.",high
